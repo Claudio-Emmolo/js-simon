@@ -1,8 +1,15 @@
-
-
-#tempo {
-  font-size: 4em;
-  padding: 10px;
+body{
+  background-color: rgb(121, 143, 190);
 }
 
+.clock-square{
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Orbitron', sans-serif;
+  background-color: black;
+  color: white;
+}
 
+.text-time{
+  font-size: 1rem;
+  text-align: center;
+}
