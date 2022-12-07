@@ -9,16 +9,16 @@ button.innerHTML = `#${contatore}`;
 button.addEventListener('click', function(){
     lock = false
 
-    if (contatore === 10){
+    if (contatore == 10){
         lock = true;
-
+        button.classList.add("crono-off");
         setTimeout(() =>{
-            gameOver = false;
+            lock = false;
             contatore = 0;
-        }, 10000)
+        }, 3000)
     } else {
+        button.classList.remove("crono-off");
         contatore++;
         button.innerHTML = `#${contatore}`;
     }
-    button.innerHTML = `#${contatore}`;
 })
